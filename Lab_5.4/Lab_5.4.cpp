@@ -31,7 +31,7 @@ double S0(const int K, const int N)
     double s = 0;
     for (int i = K; i <= N; i++)
         s += (cos(i / 2) + sin(2 * i)) / (1 + sin(cos(i)));
-    return s;
+    return floor(s * 100)/100;
 }
 double S1(const int K, const int N, const int i)
 {
